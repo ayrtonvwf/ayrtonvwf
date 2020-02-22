@@ -1,0 +1,24 @@
+{
+  "name": "ayrtonvwf",
+  "version": "1.0.0",
+  "description": "The ayrtonvwf.dev website",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --style compressed src/scss/index.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayrtonvwf/ayrtonvwf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayrtonvwf/ayrtonvwf/issues"
+  },
+  "homepage": "https://github.com/ayrtonvwf/ayrtonvwf#readme"
+}

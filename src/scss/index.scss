@@ -1,0 +1,76 @@
+@import 'reset';
+@import 'var';
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+header {
+    height: 50px;
+    background-color: var(--background-color);
+    box-shadow: 4px 0 10px rgba(0,0,0,.5);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#banner {
+    display: flex;
+
+    picture {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+    .description {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#bio {
+    display: flex;
+
+    div {
+        width: 50%;
+    }
+}
+#phpsess {
+    h1 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+    }
+    div {
+        width: 50%;
+        margin-left: auto;
+    }
+}
+#liteadmin {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 300px;
+            height: 200px;
+
+            img {
+                height: 75px;
+            }
+        }
+    }
+}
+#contact {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+footer {
+    text-align: center;
+}
