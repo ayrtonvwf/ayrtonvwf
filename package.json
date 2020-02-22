@@ -15,7 +15,7 @@
     "watch": "sass --watch --style compressed src/scss/index.scss src/css/style.css",
     "css": "sass --style compressed src/scss/index.scss dist/css/style.css",
     "jpg": "imagemin src/images/* --out-dir=dist/images",
-    "svg": "imagemin src/icons/svg/* --out-dir=dist/icons/svg && imagemin src/fontawesome/* --out-dir=dist/fontawesome",
+    "svg": "imagemin src/flaticon/svg/* --out-dir=dist/flaticon/svg && imagemin src/fontawesome/* --out-dir=dist/fontawesome",
     "html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html src/index.html",
     "build": "npm run css && npm run jpg && npm run svg && npm run html"
   },
