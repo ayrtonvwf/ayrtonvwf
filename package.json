@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "The ayrtonvwf.dev website",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "sass": "^1.25.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch --style compressed src/scss/index.scss src/css/style.css"
+    "watch": "sass --watch --style compressed src/scss/index.scss src/css/style.css",
+    "build": "sass --style compressed src/scss/index.scss src/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,5 @@
   "bugs": {
     "url": "https://github.com/ayrtonvwf/ayrtonvwf/issues"
   },
-  "homepage": "https://github.com/ayrtonvwf/ayrtonvwf#readme"
+  "homepage": "https://ayrtonvwf.dev"
 }
