@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'var';
 
-ul {
+ul, ol {
     list-style: none;
     padding: 0;
 }
@@ -12,15 +12,50 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: var(--background-color-contrast);
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .logo {
+        min-width: 240px;
+        font-weight: var(--font-weight-light);
+        span {
+            color: red;
+        }
+    }
+    nav {
+        display: flex;
+        a {
+            min-width: 150px;
+        }
+    }
 }
 #banner {
     display: flex;
+    background-color:var(--color-dark-red);
 
     picture {
+        position: relative;
         width: 50%;
 
         img {
             width: 100%;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,0,0,.5);
         }
     }
     .description {
@@ -30,13 +65,50 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: white;
+        p {
+            filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+        }
     }
 }
 #bio {
     display: flex;
+    color: white;
 
-    div {
+    & > div {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &.quote {
+            background-color: var(--color-dark-red);
+
+            div {
+                text-align: center;
+                max-width: 300px;
+            }
+        }
+        &.milestones {
+            background-color: var(--color-dark);
+
+            h1 {
+                font-weight: var(--font-weight-thin);
+            }
+            & > div > ol > li {
+                display: flex;
+                margin-top: 5px;
+
+                h2, li {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 0;
+                }
+                ol {
+                    margin-left: 5px;
+                }
+            }
+        }
     }
 }
 #phpsess {
