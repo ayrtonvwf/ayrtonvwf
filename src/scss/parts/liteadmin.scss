@@ -1,0 +1,90 @@
+#liteadmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 300px 0 calc(300px - var(--liteadmin-feature-gap)) 0;
+
+    h1 {
+        font-weight: var(--font-weight-light);
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0;
+        height: 40px;
+        color: var(--color-ambient-contrast);
+        text-align: center;
+
+        span {
+            display: inline-block;
+            height: 100%;
+            width: 1px;
+            background-color: var(--color-ambient-contrast);
+            margin: 0 15px;
+            top: 7px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding: 0 calc((100% - 900px) / 2 - var(--liteadmin-feature-gap));
+        justify-content: space-between;
+
+        li {
+            width: 300px;
+            height: 200px;
+            margin-bottom: var(--liteadmin-feature-gap);
+            box-shadow: 20px 20px 40px #D9D9D9, -20px -20px 40px #FFFFFF;
+
+            a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                color: var(--color-ambient-contrast);
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: var(--font-weight-light);
+
+                img {
+                    display: block;
+                    height: 60px;
+                    margin: 0;
+                    filter: brightness(0);
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    p {
+        text-align: center;
+        font-weight: var(--font-weight-light);
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .play {
+        background-color: var(--color-ambient-contrast);
+        display: flex;
+        text-decoration: none;
+        padding: 5px 25px;
+
+        img {
+            display: block;
+            height: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        span {
+            color: var(--color-ambient);
+            line-height: 40px;
+            font-size: 24px;
+            font-weight: var(--font-weight-light);
+        }
+    }
+}

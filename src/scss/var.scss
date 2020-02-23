@@ -1,6 +1,10 @@
 :root {
-    --background-color: #fff;
-    --background-color-contrast: #000;
+    --color-ambient: #fff;
+    --color-ambient-contrast: #000;
+
+    --color-dark-red: rgb(150, 0, 0);
+    --color-dark: rgb(40, 40, 40);
+    --color-dark-contrast: #fff;
 
     --font-weight-thin: 100;
     --font-weight-light: 300;
@@ -8,8 +12,6 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
 
-    --color-dark-red: rgb(150, 0, 0);
-    --color-dark: rgb(40, 40, 40);
-
     --diagonal-clip-path: 90%;
+    --liteadmin-feature-gap: 60px;
 }
