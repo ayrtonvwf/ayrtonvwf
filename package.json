@@ -20,7 +20,7 @@
     "svg": "svgo -f src -o dist -r --config svgo.yml",
     "jpg": "imagemin src/images/*.jpg --out-dir=dist/images",
     "ttf": "cpx \"src/fonts/**/*.*\" dist/fonts",
-    "icon-generate": "real-favicon generate faviconDescription.json faviconData.json dist/icon",
+    "icon-generate": "real-favicon generate faviconDescription.json faviconData.json dist/favicons",
     "html-copy": "cpx \"src/index.html\" dist",
     "icon-inject": "html-includes --src dist --dest dist",
     "html-minify": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html dist/index.html",
