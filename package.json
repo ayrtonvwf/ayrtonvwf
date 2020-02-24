@@ -18,7 +18,8 @@
     "svg": "svgo -f src -o dist -r --config svgo.yml",
     "jpg": "imagemin src/images/*.jpg --out-dir=dist/images",
     "html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html src/index.html",
-    "build": "npm run css && npm run svg && npm run jpg && npm run html"
+    "ttf": "cpx \"src/fonts/**/*.*\" dist/fonts",
+    "build": "npm run css && npm run svg && npm run jpg && npm run ttf && npm run html"
   },
   "repository": {
     "type": "git",
