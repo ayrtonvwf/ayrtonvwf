@@ -8,16 +8,17 @@
     "cpx": "^1.5.0",
     "html-minifier": "^4.0.0",
     "imagemin-cli": "^5.1.0",
-    "sass": "^1.25.0"
+    "sass": "^1.25.0",
+    "svgo": "^1.3.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "sass --watch --style compressed src/scss/index.scss src/css/style.css",
     "css": "sass --style compressed src/scss/index.scss dist/css/style.css",
-    "jpg": "imagemin src/images/* --out-dir=dist/images",
-    "svg": "imagemin src/flaticon/svg/* --out-dir=dist/flaticon/svg && imagemin src/fontawesome/* --out-dir=dist/fontawesome",
+    "svg": "svgo -f src -o dist -r --config svgo.yml",
+    "jpg": "imagemin src/images/*.jpg --out-dir=dist/images",
     "html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html src/index.html",
-    "build": "npm run css && npm run jpg && npm run svg && npm run html"
+    "build": "npm run css && npm run svg && npm run jpg && npm run html"
   },
   "repository": {
     "type": "git",

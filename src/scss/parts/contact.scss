@@ -20,4 +20,14 @@
             color: var(--color-dark-contrast);
         }
     }
+    @media (max-width: $mobile-width) {
+        ul {
+            display: block;
+            text-align: center;
+            padding: 70px;
+            li {
+                margin: 70px 0;
+            }
+        }
+    }
 }
