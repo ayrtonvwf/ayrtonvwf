@@ -24,7 +24,6 @@ jobs:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                     BRANCH: gh-pages
                     FOLDER: dist
-                    - name: Purge cache
             -
                 name: Purge cache
                 uses: nathanvaughn/actions-cloudflare-purge@master
