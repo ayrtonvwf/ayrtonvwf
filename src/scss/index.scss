@@ -1,10 +1,11 @@
 @import 'reset';
 @import 'var';
+@import 'const';
 
-@import 'parts/header.scss';
-@import 'parts/banner.scss';
-@import 'parts/bio.scss';
-@import 'parts/phpsess.scss';
-@import 'parts/liteadmin.scss';
-@import 'parts/contact.scss';
-@import 'parts/footer.scss';
+@import 'parts/header';
+@import 'parts/banner';
+@import 'parts/bio';
+@import 'parts/phpsess';
+@import 'parts/liteadmin';
+@import 'parts/contact';
+@import 'parts/footer';

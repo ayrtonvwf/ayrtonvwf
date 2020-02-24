@@ -1,12 +1,12 @@
 #contact {
-    font-weight: var(--font-weight-thin);
+    font-weight: $font-weight-thin;
     background-color: var(--color-dark);
     color: var(--color-dark-contrast);
     font-size: 30px;
     padding-top: 20px;
 
     h1 {
-        font-weight: var(--font-weight-thin);
+        font-weight: $font-weight-thin;
         margin: 0;
     }
     ul {

@@ -23,7 +23,7 @@
             padding: 75px;
             background-color: #5359B1;
             color: #eeeeee;
-            font-weight: var(--font-weight-black);
+            font-weight: $font-weight-black;
             overflow: hidden;
 
             span {
@@ -65,9 +65,9 @@
             width: 370px;
             text-align: right;
             color: white;
-            font-weight: var(--font-weight-light);
+            font-weight: $font-weight-light;
             h2 {
-                font-weight: var(--font-weight-light);
+                font-weight: $font-weight-light;
             }
         }
         a {
@@ -77,7 +77,7 @@
             color: var(--color-ambient-contrast);
             line-height: 40px;
             font-size: 24px;
-            font-weight: var(--font-weight-light);
+            font-weight: $font-weight-light;
             padding: 15px 25px;
             margin-top: 30px;
 

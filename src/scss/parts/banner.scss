@@ -5,7 +5,7 @@
     picture {
         position: relative;
         width: 50%;
-        clip-path: polygon(0 0, 100% 0%, var(--diagonal-clip-path) 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, $diagonal-clip-path 100%, 0% 100%);
 
         img {
             display: block;
