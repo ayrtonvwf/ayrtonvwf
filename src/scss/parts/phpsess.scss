@@ -99,4 +99,12 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 0%);
         background-color: var(--color-dark);
     }
+    
+    @media (max-width: $mobile-width) {
+        display: block;
+
+        & > div {
+            width: 100%;
+        }
+    }
 }

@@ -38,4 +38,12 @@
             }
         }
     }
+
+    @media (max-width: $mobile-width) {
+        display: block;
+        
+        & > div {
+            width: 100%;
+        }
+    }
 }

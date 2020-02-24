@@ -54,4 +54,15 @@
             }
         }
     }
+    @media (max-width: $mobile-width) {
+        display: block;
+
+        picture {
+            position: absolute;
+            width: 100%;
+        }
+        .description {
+            width: 100%;
+        }
+    }
 }

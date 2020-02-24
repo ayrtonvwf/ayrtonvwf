@@ -87,4 +87,14 @@
             font-weight: $font-weight-light;
         }
     }
+
+    @media (max-width: $mobile-width) {
+        ul {
+            display: block;
+
+            a {
+                display: block;
+            }
+        }
+    }
 }
