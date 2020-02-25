@@ -6,6 +6,9 @@
     padding-top: 20px;
     scroll-margin-top: $header-height;
 
+    ::selection {
+        background-color: $color-dark-red;
+    }
     h1 {
         font-weight: $font-weight-thin;
         margin: 0;
@@ -14,6 +17,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 200px 0;
+        flex-wrap: wrap;
 
         li {
             display: flex;
@@ -26,6 +30,7 @@
                 color: $color-dark-contrast;
                 display: block;
                 padding: 0 5px;
+                outline: none;
 
                 span {
                     display: block;
@@ -42,7 +47,7 @@
                     background-color: $color-dark-red;
                     transition: .5s height;
                 }
-                &:hover::before {
+                &:hover::before, &:focus::before {
                     height: 100%;
                 }
             }

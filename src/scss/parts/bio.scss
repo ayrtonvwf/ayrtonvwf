@@ -17,19 +17,27 @@
             font-size: 18px;
             box-shadow: inset 0 0 15px rgba(0,0,0,.5);
 
+            ::selection {
+                background-color: black;
+            }
             div {
                 text-align: center;
                 max-width: 300px;
                 width: 70%;
                 line-height: 24px;
-                filter: drop-shadow(0 0 5px #000000);
+                text-shadow: 0 0 5px #000000;
             }
         }
         &.milestones {
-            filter: drop-shadow(0 0 5px #000000);
+            text-shadow: 0 0 5px #000000;
             font-weight: $font-weight-light;
             padding-bottom: 100px;
 
+            ::selection {
+                background-color: white;
+                color: black;
+                text-shadow: none;
+            }
             h1 {
                 margin: 100px 0 20px 0;
                 font-weight: $font-weight-thin;
