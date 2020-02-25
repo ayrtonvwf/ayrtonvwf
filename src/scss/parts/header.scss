@@ -37,8 +37,7 @@ header {
             font-size: 18px;
             width: 150px;
             flex-shrink: 2;
-            display: inline-block;
-            transition: .5s color;
+            outline: none;
 
             &::before {
                 content: "";
@@ -51,8 +50,9 @@ header {
                 background-color: $color-dark-red;
                 transition: .5s height;
             }
-            &:hover {
+            &:hover, &:focus {
                 color: white;
+                transition: .5s color;
 
                 &::before {
                     height: 100%;
@@ -118,6 +118,7 @@ header {
         #menu-toggle:checked ~ nav, #menu-toggle:checked ~ .menu-backdrop {
             opacity: 1;
             pointer-events: all;
+            transition: .5s opacity;
         }
     }
 }
