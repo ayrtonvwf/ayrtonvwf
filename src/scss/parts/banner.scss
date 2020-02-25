@@ -55,6 +55,35 @@
                     margin-right: 0;
                 }
             }
+            &:not([aria-describedby]) img {
+                white-space: nowrap;
+                line-height: 21px;
+                font-weight: $font-weight-black;
+
+                &::before, &::after {
+                    content: "\00a0✓ " attr(alt) "\00a0";
+                    display: block;
+                    background: black;
+                    position: absolute;
+                    height: 100%;
+                    line-height: 21px;
+                    font-weight: $font-weight-light;
+                    letter-spacing: 0;
+                    top: 0;
+                    overflow: hidden;
+                }
+                &::after {
+                    height: 0px;
+                    color: red;
+                    transition: .5s height;
+                    bottom: 0;
+                    top: unset;
+                    background-color: white;
+                }
+                &:hover::after {
+                    height: 100%;
+                }
+            }
         }
     }
     @media (max-width: $mobile-width) {
