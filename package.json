@@ -7,7 +7,6 @@
   "devDependencies": {
     "cli-real-favicon": "0.0.8",
     "cpx": "^1.5.0",
-    "html-includes": "^4.2.0",
     "html-minifier": "^4.0.0",
     "imagemin-cli": "^5.1.0",
     "sass": "^1.25.0",
@@ -20,11 +19,10 @@
     "svg": "svgo -f src -o dist -r --config svgo.yml",
     "jpg": "imagemin src/images/*.jpg --out-dir=dist/images",
     "ttf": "cpx \"src/fonts/**/*.*\" dist/fonts",
-    "icon-generate": "real-favicon generate faviconDescription.json faviconData.json dist/favicons",
-    "html-copy": "cpx \"src/index.html\" dist",
-    "icon-inject": "html-includes --src dist --dest dist",
-    "html-minify": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html dist/index.html",
-    "build": "npm run css && npm run svg && npm run jpg && npm run ttf && npm run icon-generate && npm run html-copy && npm run icon-inject && npm run html-minify"
+    "icon-generate": "real-favicon generate faviconDescription.json faviconData.json src/favicons",
+    "icon-copy": "cpx \"src/favicons/**/*.*\" dist/favicons",
+    "html-minify": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true -o dist/index.html src/index.html",
+    "build": "npm run css && npm run svg && npm run jpg && npm run ttf && npm run icon-generate && npm run icon-copy && npm run html-minify"
   },
   "repository": {
     "type": "git",
