@@ -9,14 +9,17 @@
     <body>
         <header id="header">
             <a href="/" class="logo">ayrton<b>vwf</b><span>.dev</span></a>
-            <label for="menu-toggle" aria-hidden="true">Menu</label>
-            <input type="checkbox" id="menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" aria-hidden="true" class="menu-toggler">Menu</label>
+            <input type="checkbox" id="menu-toggle" aria-hidden="true" checked>
             <nav>
                 <a href="#bio">Bio</a>
                 <a href="#phpsess">PHPSess</a>
                 <a href="#liteadmin">LiteAdmin</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <label for="menu-toggle" aria-hidden="true" class="menu-backdrop">
+                <span>Close menu</span>
+            </label>
         </header>
         <main>
             <section id="banner">

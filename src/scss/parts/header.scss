@@ -24,6 +24,7 @@ header {
     .logo {
         font-size: 24px;
         width: 240px;
+        background-color: var(--color-ambient);
         span {
             color: red;
         }
@@ -51,9 +52,10 @@ header {
         .logo {
             width: 100%;
         }
-        label {
+        .menu-toggler {
             display: block;
             color: var(--color-ambient-contrast);
+            background-color: var(--color-ambient);
             line-height: $header-height;
             padding: 0 20px;
             position: relative;
@@ -70,9 +72,28 @@ header {
             top: $header-height;
             pointer-events: none;
         }
-    }
-    header {
-        #menu-toggle:checked ~ nav {
+        .menu-backdrop {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.9);
+            z-index: -1;
+            opacity: 0;
+            pointer-events: none;
+
+            span {
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                text-align: center;
+                color: white;
+                width: 100%;
+                font-size: 18px;
+                font-weight: $font-weight-light;
+            }
+        }
+        #menu-toggle:checked ~ nav, #menu-toggle:checked ~ .menu-backdrop {
             opacity: 1;
             pointer-events: all;
         }
