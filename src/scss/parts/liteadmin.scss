@@ -38,7 +38,12 @@
             height: 200px;
             margin-bottom: $liteadmin-feature-gap;
             box-shadow: 20px 20px 40px #D9D9D9, -20px -20px 40px #FFFFFF;
+            transition: .3s box-shadow, .3s transform;
 
+            &:hover {
+                box-shadow: 30px 30px 60px #D9D9D9, -30px -30px 60px #FFFFFF, 0 0 20px #cccccc;
+                transform: scale(1.05);
+            }
             a {
                 position: relative;
                 width: 100%;
