@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 300px 0 calc(300px - $liteadmin-feature-gap) 0;
+    padding: 200px 0 #{200px - $liteadmin-feature-gap} 0;
 
     h1 {
         font-weight: $font-weight-light;
@@ -30,6 +30,7 @@
         margin-top: 100px;
         padding: 0 calc((100% - 900px) / 2 - $liteadmin-feature-gap);
         justify-content: space-between;
+        max-width: #{300px * 3 + $liteadmin-feature-gap * 2};
 
         li {
             width: 300px;
