@@ -59,6 +59,23 @@
                     height: 60px;
                     margin: 0;
                     margin-bottom: 30px;
+                    line-height: 60px;
+
+                    &::before {
+                        content: "> Try it";
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        margin: 0 auto;
+                        background-color: var(--color-ambient);
+                        color: var(--color-ambient-contrast);
+                        line-height: 60px;
+                        font-size: 18px;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
                 }
             }
         }
