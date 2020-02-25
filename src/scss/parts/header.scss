@@ -1,5 +1,5 @@
 header {
-    height: 50px;
+    height: $header-height;
     background-color: var(--color-ambient);
     box-shadow: 4px 0 10px rgba(0,0,0,.5);
     position: sticky;
@@ -12,8 +12,7 @@ header {
         flex-shrink: 1;
         color: var(--color-ambient-contrast);
         text-decoration: none;
-        line-height: 30px;
-        padding: 10px 0;
+        line-height: $header-height;
         position: relative;
         text-align: center;
         font-weight: $font-weight-light;
@@ -55,8 +54,8 @@ header {
         label {
             display: block;
             color: var(--color-ambient-contrast);
-            line-height: 30px;
-            padding: 10px 20px;
+            line-height: $header-height;
+            padding: 0 20px;
             position: relative;
             text-align: center;
             font-weight: $font-weight-light;
@@ -68,7 +67,7 @@ header {
             width: 100%;
             background-color: var(--color-ambient);
             opacity: 0;
-            top: 50px;
+            top: $header-height;
             pointer-events: none;
         }
     }

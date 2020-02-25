@@ -4,6 +4,7 @@
     align-items: stretch;
     justify-items: stretch;
     padding: 100px 0;
+    scroll-margin-top: $header-height;
 
     & > div {
         width: 50%;

@@ -4,6 +4,7 @@
     align-items: center;
     position: relative;
     padding: 200px 0 #{200px - $liteadmin-feature-gap} 0;
+    scroll-margin-top: $header-height;
 
     h1 {
         font-weight: $font-weight-light;

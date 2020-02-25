@@ -4,6 +4,7 @@
     color: var(--color-dark-contrast);
     font-size: 30px;
     padding-top: 20px;
+    scroll-margin-top: $header-height;
 
     h1 {
         font-weight: $font-weight-thin;
