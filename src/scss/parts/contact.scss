@@ -1,7 +1,7 @@
 #contact {
     font-weight: $font-weight-thin;
-    background-color: var(--color-dark);
-    color: var(--color-dark-contrast);
+    background-color: $color-dark;
+    color: $color-dark-contrast;
     font-size: 30px;
     padding-top: 20px;
     scroll-margin-top: $header-height;
@@ -15,10 +15,37 @@
         justify-content: space-evenly;
         padding: 200px 0;
 
-        a {
-            font-size: 24px;
-            text-decoration: none;
-            color: var(--color-dark-contrast);
+        li {
+            display: flex;
+            justify-content: center;
+
+            a {
+                font-size: 24px;
+                line-height: 35px;
+                text-decoration: none;
+                color: $color-dark-contrast;
+                display: block;
+                padding: 0 5px;
+
+                span {
+                    display: block;
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 0;
+                    background-color: $color-dark-red;
+                    transition: .5s height;
+                }
+                &:hover::before {
+                    height: 100%;
+                }
+            }
         }
     }
     @media (max-width: $mobile-width) {

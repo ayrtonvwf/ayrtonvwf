@@ -1,6 +1,6 @@
 #banner {
     display: flex;
-    background-color: var(--color-dark-red);
+    background-color: $color-dark-red;
     height: 500px;
 
     & > * {

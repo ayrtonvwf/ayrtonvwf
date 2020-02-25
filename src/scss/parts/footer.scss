@@ -13,5 +13,32 @@ footer {
     }
     a {
         color: var(--color-ambient-contrast);
+        text-decoration: none;
+        transition: .5s color;
+        display: inline-block;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 4px;
+            left: 0;
+            transition: .5s height, .1s background-color, .1s bottom;
+            z-index: -1;
+            white-space: nowrap;
+            background-color: var(--color-ambient-contrast);
+        }
+        &:hover, &:focus {
+            outline: none;
+            color: white;
+
+            &::before {
+                background-color: $color-dark-red;
+                height: 100%;
+                bottom: 0;
+            }
+        }
     }
 }
