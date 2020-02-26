@@ -3,17 +3,27 @@ footer {
     font-weight: $font-weight-light;
     font-size: 24px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 0 30px 20px 30px;
 
     ::selection {
         background-color: var(--color-ambient-contrast);
         color: var(--color-ambient);
     }
-    p, small {
+    p, small, div {
         margin: 70px 0;
     }
     small {
         font-size: 18px;
+    }
+    div {
+        h1 {
+            font-weight: inherit;
+            font-size: inherit;
+            text-align: inherit;
+        }
+        p {
+            margin: 0;
+        }
     }
     a {
         color: var(--color-ambient-contrast);

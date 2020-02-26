@@ -93,6 +93,23 @@ header {
             opacity: 0;
             top: $header-height;
             pointer-events: none;
+            padding: 50px 0;
+
+            a {
+                width: 100%;
+                text-align: left;
+                padding-left: 30px;
+                transition: .5s color;
+
+                &::before {
+                    width: 0;
+                    height: 100%;
+                    transition: .5s width;
+                }
+                &:hover::before, &:focus::before {
+                    width: 100%;
+                }
+            }
         }
         .menu-backdrop {
             display: block;
