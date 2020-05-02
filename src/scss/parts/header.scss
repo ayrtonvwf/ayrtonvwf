@@ -33,6 +33,7 @@ header {
     nav {
         display: flex;
         flex-shrink: 2;
+        max-width: calc(100% - 240px);
         a {
             font-size: 18px;
             width: 150px;

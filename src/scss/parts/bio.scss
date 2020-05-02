@@ -67,6 +67,9 @@
         & > div {
             width: 100%;
         }
+        .quote {
+            padding: 50px 20px;
+        }
     }
     @media (min-width: $giant-width) {
         & > div {
