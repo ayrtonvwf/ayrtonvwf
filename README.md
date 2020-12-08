@@ -1,6 +1,14 @@
 # ayrtonvwf
 The ayrtonvwf.dev website
 
+A software developer, passionated about the power of an open web, built with open technologies by passionated developers for everyone.
+
+## Contact
+[ayrtonvwf.dev](https://ayrtonvwf.dev)
+[ayrton@ayrtonvwf.dev](mailto:ayrton@ayrtonvwf.dev)
+[twitter.com/ayrtonvwf](https://twitter.com/ayrtonvwf)
+[dev.to/ayrtonvwf](https://dev.to/ayrtonvwf)
+
 ## File sizes
 
 File | Size | Compressed
