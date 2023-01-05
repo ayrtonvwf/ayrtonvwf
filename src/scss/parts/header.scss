@@ -93,6 +93,7 @@ header {
             background-color: var(--color-ambient);
             opacity: 0;
             top: $header-height;
+            right: 0;
             pointer-events: none;
             padding: 50px 0;
 
