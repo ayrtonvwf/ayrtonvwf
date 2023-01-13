@@ -1,0 +1,127 @@
+#graphql {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+
+  ::selection {
+    background-color: var(--color-ambient-contrast);
+    color: var(--color-ambient);
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: $font-weight-light;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: $font-weight-light;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .card {
+      color: lvar(--color-ambient-contrast);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: var(--color-ambient);
+      box-shadow: 20px 20px 40px #D9D9D9, -20px -20px 40px #FFFFFF;
+      transition: .3s box-shadow, .3s transform;
+
+      &:hover, &:focus {
+        box-shadow: 30px 30px 60px #D9D9D9, -30px -30px 60px #FFFFFF, 0 0 20px #cccccc;
+        transform: scale(1.05);
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: $font-weight-light;
+        margin-bottom: 20px;
+      }
+
+      ul.tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+        list-style: none;
+
+        li {
+          position: relative;
+          margin: 0;
+          padding: 3px 7px;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: $font-weight-light;
+          text-align: center;
+          background: $color-dark-red;
+          color: var(--color-ambient);
+
+          &::before, &::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            border-style: solid;
+            border-width: 12px 2px;
+          }
+          &::before {
+            right: 100%;
+            border-color: $color-dark-red $color-dark-red transparent transparent;
+          }
+          &::after {
+            left: 100%;
+            border-color: transparent transparent $color-dark-red $color-dark-red;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: $font-weight-light;
+        margin-top: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        text-align: center;
+        background: var(--color-ambient);
+        border: 1px solid $color-dark-red;
+        color: $color-dark-red;
+        cursor: pointer;
+        transition: .3s background, .3s color;
+
+        &:hover, &:focus {
+          background: $color-dark-red;
+          color: var(--color-ambient);
+        }
+      }
+    }
+  }
+}
